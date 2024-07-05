@@ -31,6 +31,6 @@
 
 - **Pengujian dengan Postman**: Endpoint-endpoint yang dibuat diuji menggunakan Postman untuk memastikan semua rute bekerja dengan benar, dan respons yang diharapkan diterima untuk setiap permintaan.
 
-**Test Api di postman Vs Code*
-![alt text](image.png)
+**Test Api di postman Vs Code**
+![test api](image.png)
 
