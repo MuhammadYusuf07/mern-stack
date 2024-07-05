@@ -32,5 +32,14 @@
 - **Pengujian dengan Postman**: Endpoint-endpoint yang dibuat diuji menggunakan Postman untuk memastikan semua rute bekerja dengan benar, dan respons yang diharapkan diterima untuk setiap permintaan.
 
 **Test Api di postman Vs Code**
+*Untuk menjalankan code gunakan ``nodemon server.js``
+- tes get 
 ![test api](image.png)
-
+- tes /3823
+![3823](image-1.png)
+- tes post 
+![post](image-2.png)
+- delete
+![delete](image-3.png)
+- update
+![update](image-4.png)
