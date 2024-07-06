@@ -78,3 +78,6 @@
 
 5. **Pengujian dan Validasi**: Pengujian dilakukan menggunakan Postman untuk memastikan bahwa dokumen latihan dapat dibuat dengan benar dan validasi Mongoose berfungsi. Jika properti yang diperlukan hilang, akan ada pesan kesalahan yang dikembalikan. Validasi ini memastikan hanya dokumen yang valid yang disimpan di database.
 
+**Test memasukkan data ke mongodb atlas**
+![test mongodb](image-5.png)
+
