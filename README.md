@@ -81,3 +81,19 @@
 **Test memasukkan data ke mongodb atlas**
 ![test mongodb](image-5.png)
 
+## Penjelasan video 6
+1. **Pemilahan Tanggung Jawab**: Tutorial ini menekankan pemindahan logika database dari file rute ke file controller khusus untuk menjaga kode tetap terorganisir dan mudah dikelola.
+
+2. **Fungsi Controller**: Tutorial ini menjelaskan pembuatan fungsi-fungsi controller untuk menangani berbagai operasi seperti mendapatkan semua data workout, mendapatkan satu workout, membuat workout baru, menghapus workout, dan memperbarui workout.
+
+3. **Langkah Implementasi**: Prosesnya melibatkan pembuatan folder baru untuk controllers, mengatur file `workoutController.js`, dan menulis fungsi-fungsi seperti `createWorkout`, `getWorkouts`, dan `getWorkout`, memastikan mereka menangani permintaan dan berinteraksi dengan database dengan tepat.
+
+4. **Ekspor dan Impor**: Tutorial ini menunjukkan cara mengekspor fungsi controller dan mengimpornya ke dalam file rute, menggantikan penanganan rute inline dengan pemanggilan fungsi yang lebih bersih.
+
+5. **Validasi dan Penanganan Kesalahan**: Tutorial ini mencakup penambahan pengecekan validitas untuk ID objek dan penanganan kesalahan dengan baik, memastikan permintaan yang tidak valid tidak menyebabkan server crash tetapi mengembalikan pesan kesalahan yang bermakna.
+
+**Mencari data sesuai id**
+![id](image-6.png)
+**Validasi penanganan kesalahan**
+![validasi](image-7.png)
+
