@@ -44,3 +44,37 @@
 - update
 ![update](image-4.png)
 
+## Penjelasan Video 4
+1. **Menyiapkan MongoDB Atlas:**
+   - Gunakan MongoDB Atlas untuk membuat dan menghosting database online gratis.
+   - Buat akun, masuk, dan siapkan kluster bersama.
+   - Konfigurasi akses pengguna admin dan pengaturan akses jaringan, termasuk daftar putih IP.
+
+2. **Menghubungkan ke MongoDB dari Aplikasi Node:**
+   - Dapatkan string koneksi dari MongoDB Atlas.
+   - Simpan string koneksi, nama pengguna, dan kata sandi dalam variabel lingkungan (`.env`).
+
+3. **Menginstal dan Menggunakan Mongoose:**
+   - Instal paket Mongoose menggunakan `npm install mongoose`.
+   - Gunakan Mongoose sebagai library ODM (Object Data Modeling) untuk berinteraksi dengan database MongoDB.
+   - Buat skema dan model untuk menambahkan struktur data yang lebih ketat.
+
+4. **Menghubungkan Aplikasi ke Database:**
+   - Impor Mongoose di file `server.js` dan gunakan metode `connect` untuk menghubungkan ke database.
+   - Tambahkan logika untuk menangani kesalahan koneksi dan menunggu koneksi berhasil sebelum menerima permintaan.
+
+5. **Mengatasi Kesalahan Autentikasi:**
+   - Uji koneksi dengan memasukkan kredensial yang salah untuk memeriksa penanganan kesalahan.
+   - Perbaiki kredensial dan pastikan koneksi berhasil sebelum aplikasi mulai mendengarkan permintaan pada port tertentu.
+
+## Penjelasan Video 5
+1. **Membuat Skema dan Model**: Tutorial ini menjelaskan cara membuat skema dan model untuk data latihan menggunakan Mongoose. Skema mendefinisikan struktur dokumen dalam koleksi MongoDB, memastikan bahwa mereka mengikuti format yang dapat diprediksi.
+
+2. **Mendefinisikan Properti Skema**: Skema latihan mencakup properti untuk judul, repetisi (reps), dan beban (load), masing-masing dengan tipe yang ditentukan dan aturan wajib (required). Ini memastikan validasi data, sehingga properti tersebut memenuhi kriteria yang ditentukan sebelum disimpan ke database.
+
+3. **Menggunakan Model Mongoose**: Setelah skema didefinisikan, model Mongoose dibuat, memungkinkan interaksi dengan koleksi database. Model ini digunakan untuk membuat, mengambil, dan mengelola dokumen latihan dalam koleksi.
+
+4. **Mengimplementasikan Rute**: Tutorial ini menunjukkan cara menangani permintaan POST untuk membuat dokumen latihan baru. Body permintaan diuraikan untuk mengambil judul, repetisi, dan beban dari permintaan tersebut.
+
+5. **Pengujian dan Validasi**: Pengujian dilakukan menggunakan Postman untuk memastikan bahwa dokumen latihan dapat dibuat dengan benar dan validasi Mongoose berfungsi. Jika properti yang diperlukan hilang, akan ada pesan kesalahan yang dikembalikan. Validasi ini memastikan hanya dokumen yang valid yang disimpan di database.
+
