@@ -109,4 +109,8 @@
 **Untuk Cek Sudah Diupadate atau belum**
 ![cek](image-10.png)
 
+## Penjelasan Video 8
+
+
+
 
