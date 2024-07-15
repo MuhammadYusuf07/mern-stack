@@ -112,5 +112,12 @@
 ## Penjelasan Video 8
 
 
+## penjelasan Video 9 
+- Tutorial menjelaskan cara membuat komponen baru bernama `WorkoutForm` dalam aplikasi stack MERN.
+- Komponen `WorkoutForm` memiliki input untuk judul latihan, beban (dalam kg), dan repetisi, yang dikelola menggunakan state React.
+- Saat formulir dikirim, tindakan default dicegah, kemudian membuat objek latihan baru dengan data yang diambil dari input.
+- Data latihan baru dikirim ke API menggunakan permintaan POST, dan jika berhasil, pesan kesalahan atau keberhasilan akan ditampilkan.
+- Komponen ini diekspor dan digunakan di halaman beranda, dan form ditata untuk tampilan yang lebih baik. Jika ada kesalahan, pesan kesalahan akan ditampilkan di bawah form.
+
 
 
