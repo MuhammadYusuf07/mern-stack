@@ -139,6 +139,29 @@
 - Data latihan baru dikirim ke API menggunakan permintaan POST, dan jika berhasil, pesan kesalahan atau keberhasilan akan ditampilkan.
 - Komponen ini diekspor dan digunakan di halaman beranda, dan form ditata untuk tampilan yang lebih baik. Jika ada kesalahan, pesan kesalahan akan ditampilkan di bawah form.
 
+## Penjelasan Video 11
+1. **Keadaan dan Masalah Saat Ini**: Aplikasi mengambil data di halaman beranda dan memungkinkan penambahan dokumen latihan baru melalui formulir. Namun, dokumen yang baru ditambahkan hanya muncul setelah menyegarkan halaman karena keadaan lokal React untuk latihan tidak disinkronkan dengan basis data.
 
+2. **Gambaran Solusi**: Untuk mengatasi masalah ini, tutorial menyarankan menggunakan React Context untuk mengelola keadaan latihan secara global. Ini menghindari pengoperan keadaan sebagai props dan memungkinkan komponen mengakses dan memperbarui keadaan secara langsung.
+
+3. **Langkah-langkah Implementasi**: 
+   - Buat folder `context` dan file `workoutsContext.js`.
+   - Buat context dan komponen provider yang akan membungkus seluruh aplikasi.
+   - Gunakan `useReducer` untuk mengelola keadaan latihan dengan aksi dispatch.
+
+4. **Penerapan Context Provider**: Impor dan bungkus komponen `App` dengan `WorkoutsContextProvider` di `index.js` agar seluruh komponen dalam aplikasi dapat mengakses context.
+
+5. **Menggunakan Context di Komponen**: Ganti penggunaan `useState` dengan `useWorkoutsContext` di komponen beranda dan formulir latihan untuk mengkonsumsi dan memperbarui context global, memastikan UI selalu sinkron dengan basis data.
+
+## Penjelasan Video 12 
+1. **Sinkronisasi Data Real-Time**: Tutorial ini menjelaskan cara menjaga data front-end tetap sinkron dengan database secara real-time menggunakan React Context, memastikan bahwa latihan yang baru ditambahkan muncul tanpa perlu menyegarkan halaman.
+
+2. **Menambahkan Fitur Hapus**: Tutorial ini memperkenalkan penambahan tombol hapus pada setiap item latihan, yang ketika diklik, mengirim permintaan hapus ke API untuk menghapus item dari MongoDB.
+
+3. **Menangani Permintaan Asinkron**: Tutorial ini menunjukkan cara membuat fungsi asinkron untuk menangani permintaan hapus, menggunakan `await` untuk menunggu respons dari API sebelum melanjutkan proses.
+
+4. **Memperbarui State Global**: Setelah item dihapus dari database, tutorial ini menjelaskan cara memperbarui state global menggunakan fungsi `dispatch` dan menghapus item dari state latihan global.
+
+5. **Memverifikasi Respons dan Menghapus dari State**: Tutorial ini juga menekankan pentingnya memeriksa respons dari API sebelum menghapus item dari state, dan menggunakan filter untuk memperbarui array latihan dengan menghapus item yang sesuai.
 
 
