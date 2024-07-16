@@ -110,14 +110,35 @@
 ![cek](image-10.png)
 
 ## Penjelasan Video 8
+1. **Membuat Aplikasi React**: Tutorial dimulai dengan membuat aplikasi React baru bernama "front end" menggunakan perintah `npx create-react-app`. Tutorial menjelaskan cara navigasi ke folder yang dibuat, menghapus file starter yang tidak diperlukan, dan mempersiapkan aplikasi untuk pengembangan lebih lanjut.
 
+2. **Menyiapkan Routing**: React Router DOM diinstal untuk menangani routing. Tutorial menjelaskan cara mengimpor komponen yang diperlukan (BrowserRouter, Routes, dan Route) dan membuat rute dasar untuk halaman utama dengan mendefinisikan komponen Home baru.
+
+3. **Membuat Komponen Home**: Sebuah komponen Home sederhana dibuat dengan mengembalikan template dasar yang berisi elemen div dan h2. Komponen ini kemudian diekspor dan diimpor ke dalam file App.js untuk digunakan sebagai elemen yang dirender pada rute utama.
+
+4. **Menambahkan Komponen Navbar**: Tutorial melanjutkan dengan membuat komponen Navbar yang dapat digunakan kembali. Komponen ini ditempatkan di dalam folder components dan berisi template header dengan link navigasi ke halaman utama. Navbar ini kemudian diimpor dan dirender di atas semua halaman dalam komponen App.js.
+
+5. **Menambahkan Gaya Dasar**: Beberapa gaya dasar ditambahkan ke dalam file index.css. Gaya-gaya ini mencakup pengaturan font, warna, dan tata letak dasar untuk aplikasi, termasuk penataan untuk komponen Navbar dan div pages.
 
 ## penjelasan Video 9 
+1. **Mengatur Pengambilan Data di React:** Tutorial ini menjelaskan cara mengambil data dari API backend di aplikasi React menggunakan hook `useEffect` dan `useState`. Dijelaskan juga cara mengimpor hook tersebut dan mengatur fungsi asinkron untuk mengambil data latihan dari backend saat komponen pertama kali dirender.
+
+2. **Mengelola Respons API dan Memperbarui State:** Tutorial ini menjelaskan cara membuat fungsi asinkron untuk mengambil data latihan, memeriksa status respons, menguraikan data JSON, dan memperbarui state komponen dengan data latihan yang diambil menggunakan `setWorkouts`.
+
+3. **Merender Data yang Diambil:** Tutorial ini menjelaskan cara merender data latihan secara kondisional dalam komponen React, memastikan bahwa data hanya dirender ketika sudah tersedia.
+
+4. **Menangani Kesalahan Cross-Origin:** Tutorial ini menguraikan cara menangani kesalahan permintaan lintas asal (cross-origin) dengan menambahkan field proxy di file `package.json` frontend untuk mengarahkan permintaan ke server API selama pengembangan.
+
+5. **Menambahkan Komponen untuk Detail Latihan:** Tutorial ini menunjukkan cara membuat dan menggunakan komponen `WorkoutDetails` untuk merender lebih banyak informasi tentang setiap latihan, termasuk judul, jumlah repetisi, beban, dan tanggal pembuatan, serta menambahkan beberapa CSS untuk memperbaiki tampilan.
+
+
+## Penjelasan Video 10
 - Tutorial menjelaskan cara membuat komponen baru bernama `WorkoutForm` dalam aplikasi stack MERN.
 - Komponen `WorkoutForm` memiliki input untuk judul latihan, beban (dalam kg), dan repetisi, yang dikelola menggunakan state React.
 - Saat formulir dikirim, tindakan default dicegah, kemudian membuat objek latihan baru dengan data yang diambil dari input.
 - Data latihan baru dikirim ke API menggunakan permintaan POST, dan jika berhasil, pesan kesalahan atau keberhasilan akan ditampilkan.
 - Komponen ini diekspor dan digunakan di halaman beranda, dan form ditata untuk tampilan yang lebih baik. Jika ada kesalahan, pesan kesalahan akan ditampilkan di bawah form.
+
 
 
 
