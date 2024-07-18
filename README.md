@@ -178,6 +178,36 @@
 - `date-fns` digunakan untuk memformat tanggal dengan cara yang lebih mudah dibaca, seperti menampilkan "3 hari yang lalu".
 - Penulis juga memperbaiki peringatan di konsol, menambahkan `dispatch` ke array dependensi di hook `useEffect`, dan memastikan aplikasi berjalan tanpa error.
 
+# MERN Authentication
+1. **Membuat Rute Pengguna dan Fungsi Pengontrol**:
+   - Membuat file `user.js` di folder rute untuk menangani rute pengguna.
+   - Menyiapkan rute untuk login dan daftar sebagai permintaan POST.
+   - Mendefinisikan placeholder untuk fungsi penangan login dan daftar di pengontrol pengguna.
+
+2. **Mengimplementasikan Fungsi Pengontrol Pengguna**:
+   - Membuat fungsi asinkron untuk login dan daftar pengguna di file `userController.js`.
+   - Fungsi ini akan mengambil objek permintaan dan tanggapan, lalu mengirimkan tanggapan JSON sederhana untuk saat ini.
+
+3. **Membuat Model Pengguna**:
+   - Membuat file `userModel.js` di folder model.
+   - Menggunakan Mongoose untuk mendefinisikan skema pengguna dengan properti email dan kata sandi.
+   - Menentukan email sebagai unik dan wajib, serta kata sandi sebagai wajib.
+
+4. **Menghubungkan Rute dan Pengontrol di Server**:
+   - Mengimpor rute pengguna di file `server.js` dan mendaftarkannya dengan `app.use('/api/user', userRoutes)`.
+   - Memastikan rute login dan daftar terhubung dengan fungsi pengontrol yang sesuai.
+
+5. **Pengujian dengan Postman**:
+   - Menggunakan Postman untuk mengirim permintaan POST ke rute login dan daftar.
+   - Memastikan tanggapan yang benar diterima dari server, menunjukkan bahwa rute dan pengontrol berfungsi dengan baik.
+
+**Test ```Post``` Login Api**
+![login](image-11.png)
+**Test ```Post``` SignUp Api**
+![Signup](image-7.png)
+
+
+
 
 
 
