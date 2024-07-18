@@ -164,4 +164,13 @@
 
 5. **Memverifikasi Respons dan Menghapus dari State**: Tutorial ini juga menekankan pentingnya memeriksa respons dari API sebelum menghapus item dari state, dan menggunakan filter untuk memperbarui array latihan dengan menghapus item yang sesuai.
 
+## Penjelasan Video 13
+- Mengatasi pesan error yang tidak ramah pengguna dengan membuat pesan error yang lebih sederhana dan menyoroti field input yang kosong dengan border merah.
+- Menambahkan logika di backend pada workout controller untuk memeriksa field yang kosong sebelum menambahkan dokumen ke database.
+- Mengembalikan pesan error yang ramah dan daftar field yang kosong ke frontend jika ada field yang tidak diisi.
+- Menggunakan state di frontend untuk menyimpan field yang kosong dan mengatur kelas dinamis pada input berdasarkan field yang kosong.
+- Menambahkan gaya CSS untuk input dengan kelas error agar memiliki border merah, memperbaiki penampilan form ketika ada error.
+
+
+
 
