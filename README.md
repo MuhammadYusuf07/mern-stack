@@ -171,6 +171,13 @@
 - Menggunakan state di frontend untuk menyimpan field yang kosong dan mengatur kelas dinamis pada input berdasarkan field yang kosong.
 - Menambahkan gaya CSS untuk input dengan kelas error agar memiliki border merah, memperbaiki penampilan form ketika ada error.
 
+## Penjelasan Video 14
+- Tutorial ini menyelesaikan proyek stack MERN, memastikan aplikasi berfungsi penuh dengan React, Express, Node.js, dan MongoDB.
+- Peningkatan meliputi mengganti teks tombol hapus dengan ikon tempat sampah menggunakan Google Material Icons, serta memformat string tanggal menggunakan paket `date-fns`.
+- Langkah-langkah rinci diberikan untuk mengintegrasikan Google Material Icons dengan menambahkan tautan ke perpustakaan font di `index.html` dan menerapkan kelas yang sesuai pada elemen.
+- `date-fns` digunakan untuk memformat tanggal dengan cara yang lebih mudah dibaca, seperti menampilkan "3 hari yang lalu".
+- Penulis juga memperbaiki peringatan di konsol, menambahkan `dispatch` ke array dependensi di hook `useEffect`, dan memastikan aplikasi berjalan tanpa error.
+
 
 
 
