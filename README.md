@@ -206,6 +206,18 @@
 **Test ```Post``` SignUp Api**
 ![Signup](image-7.png)
 
+## Penjelasan Video 3
+1. **Pendaftaran dan Hashing Password**: Tutorial menjelaskan cara menangani permintaan pendaftaran pengguna dengan menyimpan email pengguna dan password yang di-hash ke database menggunakan Mongoose.
+
+2. **Metode Statis pada Model Pengguna**: Alih-alih langsung menulis logika pendaftaran di controller, dibuat metode statis bernama `signUp` pada model pengguna untuk menangani pendaftaran pengguna.
+
+3. **Pemeriksaan Email yang Sudah Ada**: Metode statis pertama-tama memeriksa apakah email sudah ada di database untuk mencegah pendaftaran ganda.
+
+4. **Menggunakan Bcrypt untuk Keamanan**: Bcrypt digunakan untuk meng-hash password dengan menambahkan salt sebelum menyimpannya ke database, memastikan keamanan yang lebih baik dengan mencegah paparan password langsung jika terjadi pelanggaran data.
+
+5. **Implementasi dan Pengujian**: Tutorial menunjukkan cara mengimplementasikan metode statis, memperbarui controller pengguna untuk menggunakan metode ini, dan menguji fungsionalitas pendaftaran menggunakan Postman untuk memverifikasi bahwa pengguna baru terdaftar dengan benar dengan password yang di-hash.
+**Tes SignUp**
+![signup](image-12.png)
 
 
 
