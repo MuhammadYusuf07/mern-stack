@@ -219,6 +219,18 @@
 **Tes SignUp**
 ![signup](image-12.png)
 
+## Video 4
+```npm install validator```
+
+Berikut ringkasan dalam Bahasa Indonesia:
+
+1. **Implementasi Validasi**: Tutorial ini menjelaskan cara menerapkan validasi di sisi server untuk email dan password saat pendaftaran pengguna, memastikan nilai yang dimasukkan valid sebelum menyimpannya ke database.
+2. **Instalasi Paket**: Diperkenalkan paket `validator` untuk menangani tugas validasi, sehingga tidak perlu membuat regex secara manual.
+3. **Pemeriksaan Field**: Tutorial mencakup cara memeriksa apakah field email dan password tidak kosong, dan mengembalikan error jika salah satu atau kedua field kosong.
+4. **Validasi Email dan Password**: Menggunakan metode dari paket `validator`, tutorial memeriksa apakah email valid dan password cukup kuat sesuai dengan kriteria yang ditentukan.
+5. **Pengujian dengan Postman**: Menunjukkan cara menguji endpoint menggunakan Postman untuk memastikan validasi berjalan dengan benar, seperti memeriksa apakah email sudah terdaftar dan apakah password memenuhi syarat kekuatan.
+**validasi**
+![validasi](image-13.png)
 
 
 
