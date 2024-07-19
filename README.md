@@ -243,6 +243,18 @@ Berikut ringkasan dalam Bahasa Indonesia:
 
 ## Video 5
 
+## Video 6 
+```
+npm install jsonwebtoken
+```
+
+***menghasilkan token**
+![token](image-14.png)
+
+## Video 7
+**Tes Login**
+![login](image-15.png)
+
 
 
 

@@ -17,7 +17,7 @@ header {
 header .container {
   max-width: 1400px;
   margin: 0 auto;
-  /*   padding: 10px 20px; */
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +25,6 @@ header .container {
 header a {
   color: #333;
   text-decoration: none;
-  position: relative;
-  left: 2rem;
 }
 .pages {
   max-width: 1400px;
@@ -68,8 +66,10 @@ header a {
   border-radius: 50%;
   color: #333;
 }
+
 /* new workout form */
-label, input {
+label,
+input {
   display: block;
 }
 input {
@@ -100,4 +100,22 @@ div.error {
 }
 input.error {
   border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }
