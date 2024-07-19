@@ -1,4 +1,11 @@
 # Mern Stack Muhammad Yusuf
+
+Kunjungi MongoDB Atlas [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
+
+Kunjungi JWT [MongoDB Atlas](https://jwt.io/).
+
+
+
 ## Penjelasan Video 1
 1. **Pengenalan MERN Stack**: MERN stack terdiri dari empat teknologi—MongoDB, Express, React, dan Node.js—yang digunakan bersama untuk membuat aplikasi web interaktif dan berbasis data. Menguasai MERN stack membuat Anda menjadi pengembang full-stack yang mampu membangun bagian depan (front end) dan belakang (back end) dari sebuah situs web.
 
@@ -233,6 +240,9 @@ Berikut ringkasan dalam Bahasa Indonesia:
 5. **Pengujian dengan Postman**: Menunjukkan cara menguji endpoint menggunakan Postman untuk memastikan validasi berjalan dengan benar, seperti memeriksa apakah email sudah terdaftar dan apakah password memenuhi syarat kekuatan.
 **validasi**
 ![validasi](image-13.png)
+
+## Video 5
+
 
 
 
