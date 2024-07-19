@@ -220,7 +220,9 @@
 ![signup](image-12.png)
 
 ## Video 4
-```npm install validator```
+```
+npm install validator
+```
 
 Berikut ringkasan dalam Bahasa Indonesia:
 
