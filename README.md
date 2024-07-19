@@ -2,7 +2,7 @@
 
 Kunjungi MongoDB Atlas [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
 
-Kunjungi JWT [MongoDB Atlas](https://jwt.io/).
+Kunjungi JWT [JWT](https://jwt.io/).
 
 
 
