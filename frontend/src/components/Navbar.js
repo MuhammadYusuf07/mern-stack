@@ -14,11 +14,7 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <Link to="/">
-<<<<<<< HEAD
                     <h1>Teman Latihan</h1>
-=======
-                    <h1>Teman Latihangi</h1>
->>>>>>> 0f9b8ec2ef2c9706b76d14cd7bf8bcd1cbfa8ab0
                 </Link>
                 <nav>
                     {user && (
