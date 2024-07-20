@@ -255,7 +255,7 @@ npm install jsonwebtoken
 **Tes Login**
 ![login](image-15.png)
 
-<<<<<<< HEAD
+
 **Cek ketika user sudah ada**
 ![user](frontend/image-1.png)
 
@@ -264,9 +264,6 @@ npm install jsonwebtoken
 
 
 
-
-=======
->>>>>>> 0f9b8ec2ef2c9706b76d14cd7bf8bcd1cbfa8ab0
 
 
 
