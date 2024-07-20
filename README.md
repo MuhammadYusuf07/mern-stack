@@ -1,4 +1,11 @@
 # Mern Stack Muhammad Yusuf
+
+Kunjungi MongoDB Atlas [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
+
+Kunjungi JWT [JWT](https://jwt.io/).
+
+
+
 ## Penjelasan Video 1
 1. **Pengenalan MERN Stack**: MERN stack terdiri dari empat teknologi—MongoDB, Express, React, dan Node.js—yang digunakan bersama untuk membuat aplikasi web interaktif dan berbasis data. Menguasai MERN stack membuat Anda menjadi pengembang full-stack yang mampu membangun bagian depan (front end) dan belakang (back end) dari sebuah situs web.
 
@@ -177,6 +184,77 @@
 - Langkah-langkah rinci diberikan untuk mengintegrasikan Google Material Icons dengan menambahkan tautan ke perpustakaan font di `index.html` dan menerapkan kelas yang sesuai pada elemen.
 - `date-fns` digunakan untuk memformat tanggal dengan cara yang lebih mudah dibaca, seperti menampilkan "3 hari yang lalu".
 - Penulis juga memperbaiki peringatan di konsol, menambahkan `dispatch` ke array dependensi di hook `useEffect`, dan memastikan aplikasi berjalan tanpa error.
+
+# MERN Authentication
+1. **Membuat Rute Pengguna dan Fungsi Pengontrol**:
+   - Membuat file `user.js` di folder rute untuk menangani rute pengguna.
+   - Menyiapkan rute untuk login dan daftar sebagai permintaan POST.
+   - Mendefinisikan placeholder untuk fungsi penangan login dan daftar di pengontrol pengguna.
+
+2. **Mengimplementasikan Fungsi Pengontrol Pengguna**:
+   - Membuat fungsi asinkron untuk login dan daftar pengguna di file `userController.js`.
+   - Fungsi ini akan mengambil objek permintaan dan tanggapan, lalu mengirimkan tanggapan JSON sederhana untuk saat ini.
+
+3. **Membuat Model Pengguna**:
+   - Membuat file `userModel.js` di folder model.
+   - Menggunakan Mongoose untuk mendefinisikan skema pengguna dengan properti email dan kata sandi.
+   - Menentukan email sebagai unik dan wajib, serta kata sandi sebagai wajib.
+
+4. **Menghubungkan Rute dan Pengontrol di Server**:
+   - Mengimpor rute pengguna di file `server.js` dan mendaftarkannya dengan `app.use('/api/user', userRoutes)`.
+   - Memastikan rute login dan daftar terhubung dengan fungsi pengontrol yang sesuai.
+
+5. **Pengujian dengan Postman**:
+   - Menggunakan Postman untuk mengirim permintaan POST ke rute login dan daftar.
+   - Memastikan tanggapan yang benar diterima dari server, menunjukkan bahwa rute dan pengontrol berfungsi dengan baik.
+
+**Test ```Post``` Login Api**
+![login](image-11.png)
+**Test ```Post``` SignUp Api**
+![Signup](image-7.png)
+
+## Penjelasan Video 3
+1. **Pendaftaran dan Hashing Password**: Tutorial menjelaskan cara menangani permintaan pendaftaran pengguna dengan menyimpan email pengguna dan password yang di-hash ke database menggunakan Mongoose.
+
+2. **Metode Statis pada Model Pengguna**: Alih-alih langsung menulis logika pendaftaran di controller, dibuat metode statis bernama `signUp` pada model pengguna untuk menangani pendaftaran pengguna.
+
+3. **Pemeriksaan Email yang Sudah Ada**: Metode statis pertama-tama memeriksa apakah email sudah ada di database untuk mencegah pendaftaran ganda.
+
+4. **Menggunakan Bcrypt untuk Keamanan**: Bcrypt digunakan untuk meng-hash password dengan menambahkan salt sebelum menyimpannya ke database, memastikan keamanan yang lebih baik dengan mencegah paparan password langsung jika terjadi pelanggaran data.
+
+5. **Implementasi dan Pengujian**: Tutorial menunjukkan cara mengimplementasikan metode statis, memperbarui controller pengguna untuk menggunakan metode ini, dan menguji fungsionalitas pendaftaran menggunakan Postman untuk memverifikasi bahwa pengguna baru terdaftar dengan benar dengan password yang di-hash.
+**Tes SignUp**
+![signup](image-12.png)
+
+## Video 4
+```
+npm install validator
+```
+
+Berikut ringkasan dalam Bahasa Indonesia:
+
+1. **Implementasi Validasi**: Tutorial ini menjelaskan cara menerapkan validasi di sisi server untuk email dan password saat pendaftaran pengguna, memastikan nilai yang dimasukkan valid sebelum menyimpannya ke database.
+2. **Instalasi Paket**: Diperkenalkan paket `validator` untuk menangani tugas validasi, sehingga tidak perlu membuat regex secara manual.
+3. **Pemeriksaan Field**: Tutorial mencakup cara memeriksa apakah field email dan password tidak kosong, dan mengembalikan error jika salah satu atau kedua field kosong.
+4. **Validasi Email dan Password**: Menggunakan metode dari paket `validator`, tutorial memeriksa apakah email valid dan password cukup kuat sesuai dengan kriteria yang ditentukan.
+5. **Pengujian dengan Postman**: Menunjukkan cara menguji endpoint menggunakan Postman untuk memastikan validasi berjalan dengan benar, seperti memeriksa apakah email sudah terdaftar dan apakah password memenuhi syarat kekuatan.
+**validasi**
+![validasi](image-13.png)
+
+## Video 5
+
+## Video 6 
+```
+npm install jsonwebtoken
+```
+
+***menghasilkan token**
+![token](image-14.png)
+
+## Video 7
+**Tes Login**
+![login](image-15.png)
+
 
 
 
